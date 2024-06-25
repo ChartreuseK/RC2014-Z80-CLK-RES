@@ -1,0 +1,4 @@
+*.lck
+*.zip
+out
+*backups
