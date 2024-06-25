@@ -4930,126 +4930,6 @@
 				)
 			)
 		)
-		(symbol "power:+5V"
-			(power)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+5V"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+5V\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+5V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+5V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0) hide
-					(name "+5V"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "power:GND"
 			(power)
 			(pin_names
@@ -5278,6 +5158,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "142ee8a6-f1a6-4aad-a839-e69e2553b1aa")
+	)
+	(junction
+		(at 195.58 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "24782435-06e1-475b-8318-32b6ce07295e")
 	)
 	(junction
 		(at 238.76 26.67)
@@ -8346,6 +8232,142 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VCC")
+		(at 195.58 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0f4692dc-332e-4229-925c-89c6de4c2318")
+		(property "Reference" "#PWR012"
+			(at 195.58 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 195.58 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 195.58 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 195.58 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 195.58 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "aef391d3-31da-4a5d-94b5-faa597b0c87c")
+		)
+		(instances
+			(project "z80-cpu"
+				(path "/99fcc25a-a002-421a-a96f-92f3cfdfc8b8"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 195.58 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "133a0247-ca0b-42f0-a3cf-91331d378732")
+		(property "Reference" "R4"
+			(at 198.12 72.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 198.12 74.9299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 196.596 73.914 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 195.58 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 195.58 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "60cf476b-7db7-4b4e-b4d3-d04c9e6f89d7")
+		)
+		(pin "2"
+			(uuid "96ae9c8a-538f-4e5b-8803-321458165129")
+		)
+		(instances
+			(project ""
+				(path "/99fcc25a-a002-421a-a96f-92f3cfdfc8b8"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 151.13 111.76 0)
 		(unit 1)
@@ -8569,7 +8591,7 @@
 				)
 			)
 		)
-		(property "Value" "74LS393"
+		(property "Value" "74HCT393"
 			(at 195.58 36.83 0)
 			(effects
 				(font
@@ -8794,6 +8816,72 @@
 			(project "z80-cpu"
 				(path "/99fcc25a-a002-421a-a96f-92f3cfdfc8b8"
 					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 157.48 26.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "40dafb42-2fb5-4b1d-ae11-cced92e778d7")
+		(property "Reference" "#PWR07"
+			(at 157.48 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 157.48 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 157.48 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.48 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 157.48 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d0dc0332-79e1-45b7-9f16-716a843f5f51")
+		)
+		(instances
+			(project "z80-cpu"
+				(path "/99fcc25a-a002-421a-a96f-92f3cfdfc8b8"
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -9170,7 +9258,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5992d938-cde1-405e-a6fb-a9c10eb37694")
-		(property "Reference" "J2"
+		(property "Reference" "J1"
 			(at 19.812 24.257 0)
 			(effects
 				(font
@@ -9333,7 +9421,7 @@
 		(instances
 			(project "z80-cpu"
 				(path "/99fcc25a-a002-421a-a96f-92f3cfdfc8b8"
-					(reference "J2")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -9418,7 +9506,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "635cf685-2e89-4eb3-8bbb-74279f6e563a")
-		(property "Reference" "R5"
+		(property "Reference" "R6"
 			(at 98.806 134.62 90)
 			(effects
 				(font
@@ -9473,7 +9561,7 @@
 		(instances
 			(project "z80-cpu"
 				(path "/99fcc25a-a002-421a-a96f-92f3cfdfc8b8"
-					(reference "R5")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -9609,6 +9697,72 @@
 			(project "z80-cpu"
 				(path "/99fcc25a-a002-421a-a96f-92f3cfdfc8b8"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 93.98 33.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6ace3b6e-8a3c-4718-bec9-ac48240bf186")
+		(property "Reference" "#PWR06"
+			(at 93.98 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 93.98 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 93.98 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 93.98 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 93.98 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3cbdc016-e353-4cdc-8172-e7c4a34c202a")
+		)
+		(instances
+			(project "z80-cpu"
+				(path "/99fcc25a-a002-421a-a96f-92f3cfdfc8b8"
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -9764,7 +9918,7 @@
 				)
 			)
 		)
-		(property "Value" "NE555P"
+		(property "Value" "NE555"
 			(at 173.99 73.66 0)
 			(effects
 				(font
@@ -9916,6 +10070,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VCC")
+		(at 119.38 120.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8a53a07d-d80b-4c39-86fa-056438c21833")
+		(property "Reference" "#PWR02"
+			(at 119.38 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 119.38 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 119.38 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 119.38 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2d7778ce-9577-47b8-9cdd-788f75dd2c73")
+		)
+		(instances
+			(project "z80-cpu"
+				(path "/99fcc25a-a002-421a-a96f-92f3cfdfc8b8"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 130.81 114.3 0)
 		(unit 1)
@@ -9976,72 +10196,6 @@
 			(project "z80-cpu"
 				(path "/99fcc25a-a002-421a-a96f-92f3cfdfc8b8"
 					(reference "#PWR011")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 157.48 26.67 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8d78364a-357b-4210-a2fc-dcbed2f431c0")
-		(property "Reference" "#PWR07"
-			(at 157.48 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 157.48 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 157.48 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 157.48 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 157.48 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d663efd5-88e7-4437-afdd-232d47840c45")
-		)
-		(instances
-			(project "z80-cpu"
-				(path "/99fcc25a-a002-421a-a96f-92f3cfdfc8b8"
-					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -10181,7 +10335,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "RESET"
 			(at 139.7 100.33 90)
 			(effects
 				(font
@@ -10418,6 +10572,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VCC")
+		(at 97.79 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9f73dc3d-b79c-456e-9f3f-20b95350f7ea")
+		(property "Reference" "#PWR01"
+			(at 97.79 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 97.79 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 97.79 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 97.79 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 97.79 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6a64ad80-88a8-4dbc-9bab-f573ceb03a0a")
+		)
+		(instances
+			(project "z80-cpu"
+				(path "/99fcc25a-a002-421a-a96f-92f3cfdfc8b8"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 93.98 137.16 270)
 		(mirror x)
@@ -10427,7 +10647,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a9397417-c113-4a78-a26b-86b16de50515")
-		(property "Reference" "R7"
+		(property "Reference" "R8"
 			(at 98.806 137.16 90)
 			(effects
 				(font
@@ -10481,7 +10701,7 @@
 		(instances
 			(project ""
 				(path "/99fcc25a-a002-421a-a96f-92f3cfdfc8b8"
-					(reference "R7")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -10570,7 +10790,7 @@
 				)
 			)
 		)
-		(property "Value" "74LS393"
+		(property "Value" "74HCT393"
 			(at 195.072 30.48 0)
 			(effects
 				(font
@@ -10726,72 +10946,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 130.81 109.22 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b9b22c16-4c23-499a-830a-b665ca0af67d")
-		(property "Reference" "#PWR012"
-			(at 130.81 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 130.81 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 130.81 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 130.81 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 130.81 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "34020489-61aa-4bda-ad2a-ded1b767f5d7")
-		)
-		(instances
-			(project "z80-cpu"
-				(path "/99fcc25a-a002-421a-a96f-92f3cfdfc8b8"
-					(reference "#PWR012")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_US")
 		(at 93.98 132.08 270)
 		(mirror x)
@@ -10801,7 +10955,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bb2914ff-53d6-4731-a27d-c25cf55a09e0")
-		(property "Reference" "R4"
+		(property "Reference" "R5"
 			(at 99.06 132.08 90)
 			(effects
 				(font
@@ -10856,73 +11010,7 @@
 		(instances
 			(project "z80-cpu"
 				(path "/99fcc25a-a002-421a-a96f-92f3cfdfc8b8"
-					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 119.38 120.65 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bd034b8b-09ff-434d-b42a-ae40343d9407")
-		(property "Reference" "#PWR014"
-			(at 119.38 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 119.38 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 119.38 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 119.38 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 119.38 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b054da1f-564f-437b-834a-408ce1f72212")
-		)
-		(instances
-			(project "z80-cpu"
-				(path "/99fcc25a-a002-421a-a96f-92f3cfdfc8b8"
-					(reference "#PWR014")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -10988,138 +11076,6 @@
 			(project "z80-cpu"
 				(path "/99fcc25a-a002-421a-a96f-92f3cfdfc8b8"
 					(reference "#PWR09")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 167.64 69.85 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c0d68859-1228-4612-82ba-7f9d0aee5e7a")
-		(property "Reference" "#PWR010"
-			(at 167.64 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 167.64 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 167.64 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 167.64 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 167.64 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "506d8a09-8cdf-4d65-890b-a93118d694bb")
-		)
-		(instances
-			(project "z80-cpu"
-				(path "/99fcc25a-a002-421a-a96f-92f3cfdfc8b8"
-					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 97.79 128.27 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cf55d6b5-79f9-4f80-9aca-6b5202f8a353")
-		(property "Reference" "#PWR05"
-			(at 97.79 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 97.79 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 97.79 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 97.79 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 97.79 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "56db03c9-b3e5-4c4c-aaaf-314d77b5a44d")
-		)
-		(instances
-			(project "z80-cpu"
-				(path "/99fcc25a-a002-421a-a96f-92f3cfdfc8b8"
-					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -11262,72 +11218,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 93.98 33.02 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ed4d6b0e-802b-4a4d-b5c5-07e2f795bf84")
-		(property "Reference" "#PWR06"
-			(at 93.98 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 93.98 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 93.98 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 93.98 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 93.98 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c5b20e44-143f-4fb2-9486-6ec80d32907c")
-		)
-		(instances
-			(project "z80-cpu"
-				(path "/99fcc25a-a002-421a-a96f-92f3cfdfc8b8"
-					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_US")
 		(at 93.98 129.54 270)
 		(mirror x)
@@ -11337,7 +11227,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f2681d96-73c6-4e32-85b4-27e954ba0ff4")
-		(property "Reference" "R6"
+		(property "Reference" "R7"
 			(at 99.06 129.54 90)
 			(effects
 				(font
@@ -11392,7 +11282,7 @@
 		(instances
 			(project "z80-cpu"
 				(path "/99fcc25a-a002-421a-a96f-92f3cfdfc8b8"
-					(reference "R6")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -11417,7 +11307,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "74LS393"
+		(property "Value" "74HCT393"
 			(at 125.73 134.6199 0)
 			(effects
 				(font
@@ -11566,6 +11456,138 @@
 			(project ""
 				(path "/99fcc25a-a002-421a-a96f-92f3cfdfc8b8"
 					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 167.64 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f87a8831-2af7-4ab2-81a7-ca0d14afbb0e")
+		(property "Reference" "#PWR010"
+			(at 167.64 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 167.64 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 167.64 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 167.64 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a694ac3c-b36f-4e92-8fa7-57fa6e6e4a4d")
+		)
+		(instances
+			(project "z80-cpu"
+				(path "/99fcc25a-a002-421a-a96f-92f3cfdfc8b8"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 130.81 109.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "feeb39df-f3a3-4b21-886a-c1a37cbd01a2")
+		(property "Reference" "#PWR05"
+			(at 130.81 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 130.81 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 130.81 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130.81 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 130.81 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e6612dfc-9df7-457b-a4f3-c1bcb60b676b")
+		)
+		(instances
+			(project "z80-cpu"
+				(path "/99fcc25a-a002-421a-a96f-92f3cfdfc8b8"
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
